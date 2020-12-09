@@ -1,0 +1,58 @@
+{
+  "name": "node-knex-initial",
+  "version": "1.0.0",
+  "description": "Proyecto inicializado con Node + MySQL with Objection and Knex. Cuentas de usuarios y autentificacion realizada.",
+  "main": "server.js",
+  "scripts": {
+    "start": "SET NODE_ENV=production&node server.js",
+    "dev": "nodemon server.js",
+    "dev:prod": "SET NODE_ENV=production& nodemon server.js",
+    "knex:make": "knex migrate:make --knexfile ./knexfile.js",
+    "knex:migrate": "knex migrate:latest --knexfile ./knexfile.js",
+    "knex:rollback": "knex migrate:rollback --knexfile ./knexfile.js",
+    "knex:makeseed": "knex seed:make --knexfile ./knexfile.js",
+    "knex:seed": "knex seed:run --knexfile ./knexfile.js",
+    "debug": "ndb server.js"
+  },
+  "author": "Gaston Donnet",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.2.3",
+    "helmet": "^3.23.3",
+    "hpp": "^0.2.3",
+    "html-to-text": "^5.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.20.15",
+    "knex-stringcase": "^1.4.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "mysql2": "^2.2.5",
+    "nodemailer": "^6.4.16",
+    "objection": "^2.2.3",
+    "pug": "^2.0.4",
+    "sharp": "^0.25.4",
+    "slugify": "^1.4.6",
+    "validator": "^13.5.1",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.2.0",
+    "eslint-plugin-react": "^7.21.5",
+    "prettier": "^2.2.1"
+  },
+  "engines": {
+    "node": "^12"
+  }
+}

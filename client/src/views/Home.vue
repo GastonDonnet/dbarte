@@ -8,6 +8,7 @@
     </seccion>
     <lista-cuadros
       :cantidadAMostrar="2"
+      :loadOneTime="true"
       titulo="ULTIMOS CUADROS"
     ></lista-cuadros>
     <seccion name="CONTACTO">

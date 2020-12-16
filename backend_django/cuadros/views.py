@@ -14,7 +14,7 @@ class CuadroViewSet(viewsets.ReadOnlyModelViewSet):
     filter_backends = [DjangoFilterBackend,
                        filters.SearchFilter, filters.OrderingFilter, ActiveFilter]
 
-    filterset_fields = ['active']
+    filterset_fields = ['active', 'tags']
 #     filterset_fields = {
 #        'returned': ['exact', 'lte', 'gte', 'isnull']
 #    }

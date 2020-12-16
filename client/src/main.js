@@ -6,17 +6,8 @@ import router from './router'
 import store from './store'
 import './assets/styles.css'
 import Toasted from 'vue-toasted'
-import VueLazyload from 'vue-lazyload'
 
 Vue.config.productionTip = false
-
-Vue.use(VueLazyload, {
-  preLoad: 1.3,
-  error: 'dist/error.svg',
-  loading: 'dist/loading.svg',
-  attempt: 1,
-  lazyComponent: true
-})
 
 Vue.use(Toasted, {
   duration: 4 * 1000,

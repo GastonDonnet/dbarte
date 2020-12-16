@@ -13,26 +13,28 @@
         class="w-50 mx-4 mt-2 hidden sm:block"
         v-if="route.name == 'Home'"
       />
-      <div class="flex flex-row my-auto justify-center opacity-80">
-        <router-link :to="{ name: 'Home' }">
+      <div
+        class="flex flex-row justify-center opacity-80 items-center h-14 lg:h-auto my-2"
+      >
+        <router-link class="h-full mx-2 router-active" :to="{ name: 'Home' }">
           <button
-            class="w-30 h-10 my-5 px-4 py-1 mx-2 text-white font-light tracking-wider rounded shadow-xl bg-gray-900 hover:bg-green-400 transition-all duration-200 focus:outline-none"
+            class="w-30 px-4 py-1 h-full text-white font-light tracking-wider rounded shadow-xl bg-gray-900 hover:bg-green-400 transition-all duration-200 focus:outline-none"
           >
             HOME
           </button>
         </router-link>
-        <router-link :to="{ name: 'Tienda' }">
+        <router-link class="h-full my-5 mx-2" :to="{ name: 'Tienda' }">
           <button
-            class="w-30 h-10 my-5 px-4 py-1 mx-2 text-white font-light tracking-wider rounded shadow-xl bg-gray-900 hover:bg-green-400 transition-all duration-200 focus:outline-none"
+            class="w-30 px-4 py-1 h-full text-white font-light tracking-wider rounded shadow-xl bg-gray-900 hover:bg-green-400 transition-all duration-200 focus:outline-none"
           >
             TIENDA
           </button>
         </router-link>
-        <router-link :to="{ name: 'About' }">
+        <router-link class="h-full my-5 mx-2" :to="{ name: 'About' }">
           <button
-            class="w-30 h-10 my-5 px-4 py-1 mx-2 text-white font-light tracking-wider rounded shadow-xl bg-gray-900 hover:bg-green-400 transition-all duration-200 focus:outline-none"
+            class="w-30 px-4 py-1 h-full text-white font-light tracking-wider rounded shadow-xl bg-gray-900 hover:bg-green-400 transition-all duration-200 focus:outline-none"
           >
-            ABOUT
+            PREGUNTAS FRECUENTES
           </button>
         </router-link>
       </div>
@@ -57,4 +59,9 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+.router-link-exact-active > button {
+  --tw-bg-opacity: 1;
+  background-color: rgba(52, 211, 153, var(--tw-bg-opacity));
+}
+</style>

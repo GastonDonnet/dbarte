@@ -33,7 +33,7 @@ export default {
       console.log(this.routesWithoutBackgroundImage.indexOf(this.$route.name))
       if (this.routesWithoutBackgroundImage.indexOf(this.$route.name) == -1) {
         return {
-          backgroundImage: `url(${require('@/assets/svg/DBArte1.svg')})`
+          // backgroundImage: `url(${require('@/assets/svg/DBArte1.svg')})`
         }
       } else {
         return ''

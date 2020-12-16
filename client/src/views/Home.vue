@@ -1,39 +1,34 @@
 <template>
   <div>
-    <ultimos-cuadros></ultimos-cuadros>
+    <seccion name="SOBRE NOSOTROS">
+      <b class="text-lightblue-dark">dbArte</b> es una tienda digital de cuadros
+      originales impresos con altisima calidad sobre un bastidor de tela canvas
+      proporcionando un acabado practicamente igual al cuadro pintado a mano.
+      <br />
+    </seccion>
+    <lista-cuadros
+      :cantidadAMostrar="2"
+      titulo="ULTIMOS CUADROS"
+    ></lista-cuadros>
     <seccion name="CONTACTO">
-      <div class="grid grid-cols-2 sm:grid-cols-4 justify-around my-2">
-        <a href="#" class="my-2 flex flex-col items-center">
-          <img class="w-10" src="@/assets/svg/instagram.svg" alt="" />
-          <p class="font-thin text-gray-600">@dbarte</p>
-        </a>
-        <a href="#" class="my-2 flex flex-col items-center">
-          <img class="w-10" src="@/assets/svg/facebook.svg" alt="" />
-          <p class="font-thin text-gray-600">/dbarte</p>
-        </a>
-        <a href="#" class="my-2 flex flex-col items-center">
-          <img class="w-10" src="@/assets/svg/email.svg" alt="" />
-          <p class="font-thin text-gray-600">dbart@gmail.com</p>
-        </a>
-        <a href="#" class="my-2 flex flex-col items-center">
-          <img class="w-10" src="@/assets/svg/whatsapp.svg" alt="" />
-          <p class="font-thin text-gray-600">3404-15530149</p>
-        </a>
-      </div>
+      <contacto></contacto>
     </seccion>
   </div>
 </template>
 
 <script>
 import Seccion from '../components/Seccion.vue'
-import UltimosCuadros from '../components/UltimosCuadros.vue'
+import ListaCuadros from '../components/ListaCuadros.vue'
+import Contacto from '../components/Contacto.vue'
+
 // @ is an alias to /src
 
 export default {
   name: 'Home',
   components: {
-    UltimosCuadros,
-    Seccion
+    ListaCuadros,
+    Seccion,
+    Contacto
   }
 }
 </script>

@@ -3,14 +3,35 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-transparent-white {
-  background-color: rgb(247 247 247 / 75%);
-  box-shadow: 0 0 20px -20px black;
-}
+
 
 body {
   color: rgb(26, 26, 26);
   background-color: rgb(247, 247, 247);
 
   min-height: 100vh;
+}
+
+button[disabled] {
+  background-color: rgb(161, 161, 161);
+  color: rgb(212, 212, 212);
+}
+
+button[disabled]:focus,
+button[disabled]:hover {
+  background-color: rgb(161, 161, 161);
+  color: rgb(212, 212, 212);
+  pointer-events: none;
+}
+
+
+
+/* MODAL PLUGIN */
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.6s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }

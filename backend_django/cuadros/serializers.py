@@ -30,6 +30,7 @@ class CuadroSerializer(serializers.ModelSerializer):
     def setup_eager_loading(queryset):
         queryset = queryset.prefetch_related('tamaños')
         queryset = queryset.prefetch_related('imagenes')
+        queryset = queryset.prefetch_related('tags')
 
         return queryset
 

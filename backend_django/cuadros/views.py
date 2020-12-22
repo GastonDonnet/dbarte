@@ -5,6 +5,9 @@ from django_filters.rest_framework import DjangoFilterBackend
 from .models import Cuadro, Tag, Tamaño
 from .serializers import CuadroSerializer, TagSerializer, TamañoSerializer
 
+from django.utils.decorators import method_decorator
+from django.views.decorators.cache import cache_page
+
 # ViewSets define the view behavior.
 
 
@@ -20,12 +23,16 @@ class CuadroViewSet(viewsets.ReadOnlyModelViewSet):
 #    }
     ordering_fields = '__all__'
     search_fields = ['titulo']
-    #default_filter = {"active": True}
 
     def get_queryset(self):
         qs = super().get_queryset()
         qs = self.get_serializer_class().setup_eager_loading(qs)
         return qs
+
+    # Cache x 10 minutos
+    @method_decorator(cache_page(60*10))
+    def dispatch(self, request, *args, **kwargs):
+        return super().dispatch(request, *args, **kwargs)
 
 
 class TamañoViewSet(viewsets.ReadOnlyModelViewSet):

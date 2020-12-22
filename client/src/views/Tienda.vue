@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-16 sm:mt-2">
+  <div class="container">
     <lista-cuadros titulo="CUADROS" :filter="true"></lista-cuadros>
   </div>
 </template>

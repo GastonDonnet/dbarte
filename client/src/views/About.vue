@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-16 sm:mt-2">
+  <div class="container">
     <seccion name="CONTACTO">
       Para realizar compras o consultas podes contactarnos a cualquiera de
       nuestras redes sociales, enviando un mail o un mensaje a nuestro whatsapp.

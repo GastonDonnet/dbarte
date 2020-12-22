@@ -1,5 +1,17 @@
 <template>
-  <div>
+  <div class="container">
+    <div class="flex flex-row -mb-6">
+      <img
+        src="@/assets/svg/undraw_making_art modified.svg"
+        alt=""
+        class="w-full max-w-screen-md mx-auto"
+      />
+      <img
+        src="@/assets/svg/DBArte1.svg"
+        alt=""
+        class="w-full max-w-screen-md mx-auto hidden lg:block"
+      />
+    </div>
     <seccion name="SOBRE NOSOTROS">
       <b class="text-lightblue-dark">dbArte</b> es una tienda digital de cuadros
       originales impresos con altisima calidad sobre un bastidor de tela canvas

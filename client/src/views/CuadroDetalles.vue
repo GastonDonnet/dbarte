@@ -129,6 +129,30 @@ export default {
     }
   },
 
+  computed: {
+    formErrors() {
+      let email = ''
+      let mensaje = ''
+
+      if (!this.validEmail(this.consulta.email)) {
+        email = 'Email invalido'
+      }
+
+      if (!this.consulta.email) {
+        email = 'Por favor escribe un email'
+      }
+
+      if (!this.consulta.mensaje) {
+        mensaje = 'Por favor completa un mensaje'
+      }
+
+      return {
+        email,
+        mensaje
+      }
+    }
+  },
+
   methods: {
     async enviarMail() {
       this.sending = true
@@ -148,11 +172,18 @@ export default {
         this.sending = false
       }
     },
-    validEmail: function(email) {
+    validEmail: function (email) {
       var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       return re.test(email)
-    }
-  },
+    },
+    async getCuadro() {
+      if (this.$route.params.cuadro) {
+        this.cuadro = this.$route.params.cuadro
+      } else {
+        const res = await this.$http.get(`cuadros/${this.$route.params.id}/`)
+        this.cuadro = res.data
+      }
+    },
     track() {
       this.$gtag.event('view_item', {
         event_category: 'cuadro_view',
@@ -163,6 +194,7 @@ export default {
   },
 
   async created() {
+    await this.getCuadro()
     this.track()
   }
 }

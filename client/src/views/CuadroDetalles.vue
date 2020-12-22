@@ -153,34 +153,17 @@ export default {
       return re.test(email)
     }
   },
-
-  computed: {
-    formErrors() {
-      let email = ''
-      let mensaje = ''
-
-      if (!this.validEmail(this.consulta.email)) {
-        email = 'Email invalido'
-      }
-
-      if (!this.consulta.email) {
-        email = 'Por favor escribe un email'
-      }
-
-      if (!this.consulta.mensaje) {
-        mensaje = 'Por favor completa un mensaje'
-      }
-
-      return {
-        email,
-        mensaje
-      }
+    track() {
+      this.$gtag.event('view_item', {
+        event_category: 'cuadro_view',
+        event_label: 'Se visito un cuadro',
+        value: `(${this.cuadro.id}) ${this.cuadro.titulo}`
+      })
     }
   },
 
   async created() {
-    const res = await this.$http.get(`cuadros/${this.$route.params.id}`)
-    this.cuadro = res.data
+    this.track()
   }
 }
 </script>

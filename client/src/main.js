@@ -6,6 +6,17 @@ import router from './router'
 import store from './store'
 import './assets/styles.css'
 import Toasted from 'vue-toasted'
+import VueGtag from 'vue-gtag'
+
+Vue.use(
+  VueGtag,
+  {
+    config: { id: 'G-30BS4V5L2D' },
+    appName: 'db Arte'
+  },
+
+  router
+)
 
 Vue.config.productionTip = false
 

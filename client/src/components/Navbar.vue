@@ -4,12 +4,9 @@
   >
     <div class="flex flex-row items-center" :class="{ 'flex-col': open }">
       <div class="flex flex-row w-full md:w-auto md:mr-auto">
-        <router-link :to="{ name: 'Home' }"
-          ><img
-            src="@/assets/svg/DBArte1.svg"
-            alt="DBArte"
-            class="h-14 mr-auto"
-        /></router-link>
+        <router-link :to="{ name: 'Home' }" class="mr-auto">
+          <img src="@/assets/svg/DBArte1.svg" alt="DBArte" class="h-14" />
+        </router-link>
 
         <button @click="open = !open" class="md:hidden hover:text-green-500">
           <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">

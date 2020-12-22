@@ -1,5 +1,10 @@
 <template>
-  <router-link :to="{ name: 'Cuadro', params: { id: cuadro.id } }">
+  <router-link
+    :to="{
+      name: 'Cuadro',
+      params: { id: cuadro.id, cuadro: cuadro }
+    }"
+  >
     <div class="mx-1 my-1 relative cuadro">
       <img
         :src="cuadro.imagenes[0].imagen"

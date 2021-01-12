@@ -1,5 +1,4 @@
 from django.db.models import query
-import ipdb
 from rest_framework import filters
 
 

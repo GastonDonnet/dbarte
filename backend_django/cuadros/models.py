@@ -1,5 +1,4 @@
 from django.db.models.fields import CharField
-import ipdb
 import io
 import sys
 from django.db import models

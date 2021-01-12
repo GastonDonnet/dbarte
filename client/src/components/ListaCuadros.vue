@@ -31,16 +31,25 @@
         <cuadro :cuadro="cuadro"></cuadro>
       </stack-item>
     </stack>
+    <div class="flex text-center justify-center">
+      <img
+        v-if="this.cuadros.length != this.cuadrosCount"
+        src="@/assets/svg/flecha-correcta.svg"
+        class="w-8 transform rotate-90"
+      />
+      <loader-horizontal v-if="loading"></loader-horizontal>
+    </div>
   </seccion>
 </template>
 
 <script>
 import { Stack, StackItem } from 'vue-stack-grid'
 import Cuadro from './Cuadro.vue'
+import LoaderHorizontal from './LoaderHorizontal.vue'
 import Seccion from './Seccion.vue'
 
 export default {
-  components: { Seccion, Cuadro, Stack, StackItem },
+  components: { Seccion, Cuadro, Stack, StackItem, LoaderHorizontal },
   props: {
     cantidadAMostrar: {
       required: false,

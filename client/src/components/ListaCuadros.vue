@@ -33,7 +33,7 @@
     </stack>
     <div class="flex text-center justify-center">
       <img
-        v-if="this.cuadros.length != this.cuadrosCount"
+        v-if="(this.cuadros.length != this.cuadrosCount) & !this.loadOneTime"
         src="@/assets/svg/flecha-correcta.svg"
         class="w-8 transform rotate-90"
       />
@@ -138,6 +138,7 @@ export default {
 
       // Numero total de cuadros
       this.cuadrosCount = res.data.count
+      console.log(res)
 
       // Ya cargado
       this.loading = false

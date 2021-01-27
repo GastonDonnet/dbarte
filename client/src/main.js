@@ -25,10 +25,7 @@ Vue.use(Toasted, {
   position: 'bottom-right'
 })
 
-let apiUrl = 'http://192.168.0.180:8000/'
-if (process.env.NODE_ENV == 'production') {
-  apiUrl = 'https://?/'
-}
+const apiUrl = process.env.VUE_APP_API_URL
 
 Vue.prototype.$staticUrl = apiUrl + 'media/'
 Vue.prototype.$apiUrl = apiUrl + 'api/'

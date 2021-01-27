@@ -1,0 +1,30 @@
+version: "3.9"
+
+services:
+  # web-dbarte:
+  #   build: ./client/
+  #   networks:
+  #     - lo-connected_frontend
+  #   volumes:
+  #     # - ./client/dist:/app/dist
+  #     - lo-connected_www:/app
+  #   tty: true
+
+  django-api:
+    build: ./backend_django/
+    networks:
+      - lo-connected_backend
+
+    ports:
+      - "8000:8000"
+
+networks:
+  # lo-connected_frontend:
+  #   external: true
+  #   driver: bridge
+  lo-connected_backend:
+    external: true
+    driver: bridge
+# volumes:
+#   lo-connected_www:
+#     external: true

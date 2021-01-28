@@ -1,5 +1,13 @@
 module.exports = {
-  purge: ['./src/**/*.{vue,js,ts,jsx,tsx}'],
+  purge: {
+    content: [
+      './src/**/*.{vue,js,ts,jsx,tsx}',
+      './node_modules/vue-tailwind-modal/src/VueTailwindModal.vue'
+    ],
+    options: {
+      whitelist: ['bg-smoke-800']
+    }
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {

@@ -1,12 +1,14 @@
 chcp 1252
 
+cd "backend_django"
+
 python -m venv .venv
 
-call "%cd%\backend_django\.venv\Scripts\activate.bat" 
+call "%cd%\.venv\Scripts\activate.bat" 
+
+
 
 pip install -r requirements.txt
-
-cd "backend_django/dbarte"
 
 start chrome 127.0.0.1:8000
 

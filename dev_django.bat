@@ -2,7 +2,7 @@ chcp 1252
 
 call "%cd%\backend_django\.venv\Scripts\activate.bat" 
 
-cd "backend_django/dbarte"
+cd "backend_django"
 
 start chrome 127.0.0.1:8000
 

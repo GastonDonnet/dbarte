@@ -25,6 +25,3 @@ networks:
   lo-connected_backend:
     external: true
     driver: bridge
-# volumes:
-#   lo-connected_www:
-#     external: true

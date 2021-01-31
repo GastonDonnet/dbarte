@@ -1,24 +1,8 @@
 # dbarte
 
-## Project setup
-```
-npm install
-```
+Web: <https://www.dbarte.tk>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Proyecto para emprendimiento de venta de cuadros. Posee un panel administrador de django personalizado para poder configurar los cuadros que se venden, categorias, precios y medidas entre otras cosas.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Frontend: Vue + Tailwind
+Backend: Python + Django

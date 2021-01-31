@@ -13,32 +13,32 @@
         >@danielabbarbero</a
       >.
       <hr class="my-1" />
-      Son realizados en bastidor utilizando acrilicos profesionales.
+      Son realizados en bastidor utilizando acrílicos profesionales.
       <hr class="my-1" />
       Las fotos utilizadas para realizar las impresiones son tomadas por un
       fotografo profesional, garantizando la mejor calidad.
     </seccion>
 
     <seccion name="ENVIO">
-      Los envios estan a cargo del comprador.
+      Los envíos están a cargo del comprador.
       <hr class="my-1" />
-      Envio gratis en las localidades de San Carlos Centro, San Carlos Sur, San
+      Envío gratis en las localidades de San Carlos Centro, San Carlos Sur, San
       Carlos Norte, Rafaela y Santa Fe (Centro).
     </seccion>
     <seccion name="TAMAÑOS">
       Al ser impresos el tamaño de un cuadro puede elegirse.
       <hr class="my-1" />
       Lo ideal seria elegir el tamaño original o menores al mismo para no perder
-      resolucion.
+      resolución.
       <hr class="my-1" />
-      Si se eligen tamaños con otra relacion aspecto, el cuadro no se deformara
+      Si se eligen tamaños con otra relación aspecto, el cuadro no se deformara
       sino, que sera recortado.
       <hr class="my-1" />
       Cada cuadro posee uno o mas tamaños pre-definidos los cuales dependen
-      tanto de como fue pintado (hay cuadros que podrian recortarse) y el tamaño
+      tanto de como fue pintado (hay cuadros que podrían recortarse) y el tamaño
       original.
       <hr class="my-1" />
-      Si desea tamaños que no estan en la lista, consulte por cualquiera de los
+      Si desea tamaños que no están en la lista, consulte por cualquiera de los
       medios previamente mencionados.
     </seccion>
     <seccion name="PAGO">

@@ -14,8 +14,8 @@
     </div>
     <seccion name="SOBRE NOSOTROS">
       <b class="text-lightblue-dark">dbArte</b> es una tienda digital de cuadros
-      originales impresos con altisima calidad sobre un bastidor de tela canvas
-      proporcionando un acabado practicamente igual al cuadro pintado a mano.
+      originales impresos con altísima calidad sobre un bastidor de tela canvas
+      proporcionando un acabado prácticamente igual al cuadro pintado a mano.
       <br />
     </seccion>
     <lista-cuadros

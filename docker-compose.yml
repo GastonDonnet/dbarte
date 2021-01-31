@@ -11,6 +11,7 @@ services:
   #   tty: true
 
   django-api:
+    restart: unless-stopped
     build: ./backend_django/
     networks:
       - lo-connected_backend

@@ -33,7 +33,11 @@
     </stack>
     <div class="flex text-center justify-center">
       <img
-        v-if="(this.cuadros.length != this.cuadrosCount) & !this.loadOneTime"
+        v-if="
+          (this.cuadros.length != this.cuadrosCount) &
+          !this.loadOneTime &
+          !this.loading
+        "
         src="@/assets/svg/flecha-correcta.svg"
         class="w-8 transform rotate-90"
       />

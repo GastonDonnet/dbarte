@@ -166,7 +166,7 @@ export default {
       }
       if (res.status != 200) {
         this.$toasted.error(
-          'Error al enviar el mensaje, por favor contactese por otro medio!'
+          'Error al enviar el mensaje, por favor contáctese por otro medio!'
         )
         this.showModal = false
         this.sending = false

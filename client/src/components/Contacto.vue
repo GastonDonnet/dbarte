@@ -22,7 +22,7 @@
       <p class="font-thin text-gray-600">dbarte.shop@gmail.com</p>
     </a>
     <a
-      href="https://wa.me/3404634794?texto=Quisiera%20consultar%20sobre%20dbArte"
+      href="https://wa.me/+543404634794?texto=Quisiera%20consultar%20sobre%20dbArte"
       class="my-2 flex flex-col items-center"
     >
       <img class="w-10" src="@/assets/svg/whatsapp.svg" alt="" />

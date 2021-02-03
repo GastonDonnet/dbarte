@@ -21,7 +21,7 @@
     <lista-cuadros
       :cantidadAMostrar="2"
       :loadOneTime="true"
-      titulo="ULTIMOS CUADROS"
+      titulo="ÚLTIMOS CUADROS"
     ></lista-cuadros>
     <seccion name="CONTACTO">
       <contacto></contacto>

@@ -35,11 +35,10 @@ def apply_copyright(img, text):
 
     draw = ImageDraw.Draw(text_canvas)
     #font = ImageFont.load_default()
-    font = ImageFont.truetype('Roboto-Regular.ttf', int(0.5 * min(w * 0.1, h * 0.1)))
+    font = ImageFont.truetype('Roboto-Regular.ttf', int(0.5 * min(w * 0.2, h * 0.2)))
     text_w, text_h = draw.textsize(text, font)
-    pos = ((w - text_w) - min(w, h) * 0.02, (h - text_h) - min(w, h) * 0.02)
-
-    draw.text(pos, text, font=font, fill=(255, 255, 255, 150))
+    pos = ((w - text_w*0.5) - w * 0.5, (h - text_h*0.5) - h * 0.5)
+    draw.text(pos, text, font=font, fill=(255, 255, 255, 95))
 
     temp_canvas = Image.new('RGBA', (w, h), (0, 0, 0, 0))
     temp_canvas.paste('#000000', (0, 0), text_canvas)

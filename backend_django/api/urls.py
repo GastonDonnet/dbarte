@@ -2,6 +2,7 @@ from django.urls import path, include
 from rest_framework import routers, views
 from .views import ComprarCuadro, UserViewSet, ComprarCuadro
 from cuadros.views import CuadroViewSet, TamañoViewSet, TagViewSet
+from fotos.views import FotoViewSet
 
 
 # Routers provide an easy way of automatically determining the URL conf.
@@ -10,6 +11,7 @@ router.register(r'users', UserViewSet)
 router.register(r'cuadros', CuadroViewSet)
 router.register(r'tamaños', TamañoViewSet)
 router.register(r'tags', TagViewSet)
+router.register(r'fotos', FotoViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.

@@ -80,6 +80,10 @@ export default {
           route: 'Tienda'
         },
         {
+          titulo: 'GALERÍA',
+          route: 'Galeria'
+        },
+        {
           titulo: 'PREGUNTAS FRECUENTES',
           route: 'About'
         }

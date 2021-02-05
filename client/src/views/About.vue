@@ -6,17 +6,17 @@
       <contacto></contacto>
     </seccion>
     <seccion name="PRODUCCIÓN">
-      Los cuadros son originales provenientes de la artista
-      <a
-        class="text-lightblue-dark"
-        href="https://www.instagram.com/danielabbarbero/"
-        >@danielabbarbero</a
-      >.
+      Los cuadros son reproducciones de obras originales del un mismo autor.
       <hr class="my-1" />
-      Son realizados en bastidor utilizando acrílicos profesionales.
+      Estos son impresos en Lienzo Canvas, tensado y montado sobre bastidor de
+      madera de 20 mm. listos para colgar.
       <hr class="my-1" />
       Las fotos utilizadas para realizar las impresiones son tomadas por un
-      fotógrafo profesional, garantizando la mejor calidad.
+      fotógrafo profesional, garantizando la mejor calidad. El resultado es la
+      calidad "Fine Art", la que se usa profesionalmente para reproducción de
+      obras de arte.
+      <hr class="my-1" />
+      Al ser impresiones los colores pueden variar levemente.
     </seccion>
 
     <seccion name="ENVÍO">
@@ -26,11 +26,11 @@
       Carlos Norte, Rafaela y Santa Fe (Centro).
     </seccion>
     <seccion name="TAMAÑOS">
-      Cada cuadro posee un "Tamaño original", pero en la impresión pueden ser
-      escalados. Mientras el mismo sea mas pequeño no perdería calidad.
-      <hr class="my-1" />
-      Si desea otro tamaño, puede ponerse en contacto con nosotros comentando el
-      tamaño que busca, el precio variara con el mismo.
+      Cada obra se ofrece en distintos tamaños, sin descuidar la proporción y
+      calidad.
+    </seccion>
+    <seccion name="PLAZO DE ENTREGA">
+      El plazo de entrega, si el cuadro no esta en stock sera menor a 2 semanas.
     </seccion>
     <seccion name="PAGO">
       Los pagos se realizan mediante transferencia bancaria, mercado pago o

@@ -33,11 +33,7 @@
     </stack>
     <div class="flex text-center justify-center">
       <img
-        v-if="
-          (this.cuadros.length != this.cuadrosCount) &
-          !this.loadOneTime &
-          !this.loading
-        "
+        v-if="(cuadros.length != cuadrosCount) & !loadOneTime & !loading"
         src="@/assets/svg/flecha-correcta.svg"
         class="w-8 transform rotate-90"
       />
@@ -79,18 +75,6 @@ export default {
       loadedOneTime: false,
       cuadrosCount: -1
     }
-  },
-
-  computed: {
-    // filteredCuadros() {
-    //   if (this.selectedTag) {
-    //     return this.cuadros.filter(
-    //       (el) => el.tags.indexOf(this.selectedTag) >= 0
-    //     )
-    //   } else {
-    //     return this.cuadros
-    //   }
-    // }
   },
 
   methods: {

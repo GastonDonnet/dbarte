@@ -2,7 +2,6 @@
   <div id="app" class="min-h-screen">
     <Navbar />
     <div class="container mx-auto min-h-screen">
-      <!-- <Navbar /> -->
       <router-view />
     </div>
     <Footer />

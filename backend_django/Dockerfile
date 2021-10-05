@@ -28,7 +28,8 @@ RUN apk --no-cache add --virtual build-deps \
     tiff-dev \
     tk-dev \
     zlib-dev \
-    && pip install Pillow mysqlclient \
+    libevent-dev \
+    && pip install Pillow==8.1.0 mysqlclient==2.0.3 \
     && apk del build-deps
 
 RUN pip install -r requirements.txt
@@ -36,6 +37,6 @@ COPY . .
 ENV PORT=8000
 EXPOSE 8000
 # Runner script here
-CMD ["/api/runner.sh"]
+CMD ["bash", "/api/runner.sh"]
 
 
